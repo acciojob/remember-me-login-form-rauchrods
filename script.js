@@ -26,5 +26,6 @@ if(localStorage.getItem("userdetail")) {
     let userdetail = JSON.parse(localStorage.getItem("userdetail"));
     document.querySelector("#username").value = userdetail.username;
     document.querySelector("#password").value = userdetail.password;
+	document.querySelector("#checkbox").checked ="true"
     ext_user.style.display = "inline-block";
 }
